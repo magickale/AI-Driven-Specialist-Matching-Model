@@ -8,3 +8,5 @@ multiatis
 assistant_utils.py
 import_datasets.py
 intent_slot_classification_config.yaml
+.python-version
+NLU-Evaluation-Data-master.zip
