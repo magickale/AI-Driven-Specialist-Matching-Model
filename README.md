@@ -9,7 +9,13 @@ python3 --version
 
 Verify you are now on python 3.10
 
-## 2. Install Project Dependencies
+## 2. Create a virtual environment (optional)
+```shell
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+## 3. Install Project Dependencies
 ```shell
 python3 -m pip install --upgrade pip setuptools wheel packaging
 python3 -m pip install torch==2.1.2 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
