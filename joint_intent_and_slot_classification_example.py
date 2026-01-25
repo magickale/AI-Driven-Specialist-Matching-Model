@@ -66,8 +66,7 @@ DATA_DIR = "."
 NEMO_DIR = '.'
 
 # download the converter files from github for the purpose of this tutorial
-wget.download(f'https://raw.githubusercontent.com/NVIDIA/NeMo/r2.0.0rc0/scripts/dataset_processing/nlp/intent_and_slot/import_datasets.py', NEMO_DIR)
-wget.download(f'https://raw.githubusercontent.com/NVIDIA/NeMo/r2.0.0rc0/scripts/dataset_processing/nlp/intent_and_slot/assistant_utils.py', NEMO_DIR)
+
 
 # download and unzip the example dataset from github
 print('Downloading dataset...')
@@ -113,7 +112,6 @@ We will download the config file from repository for the purpose of the tutorial
 """
 
 # download the model config file from repository for the purpose of this example
-wget.download(f'https://raw.githubusercontent.com/NVIDIA/NeMo/r2.0.0rc0/examples/nlp/intent_slot_classification/conf/intent_slot_classification_config.yaml', NEMO_DIR)
 
 # print content of the config file
 config_file = "intent_slot_classification_config.yaml"
@@ -364,143 +362,4 @@ To run a training script, use:
 By default, this script uses examples/nlp/intent_slot_classification/conf/intent_slot_classification_config.py config file, and you may update all the params inside of this config file or alternatively providing them in the command line.
 
 <a id='multi-label'></a>
-# Multi-Label Intent Classification
----
-
-As mentioned above, our multi-label model will be very similar the single intent classification model, with the added functionality of predicting multiple different intents for a single query. For example, the query `show all flights and fares from denver to san francisco` would have intents `atis_airfare` and `atis_flight`. From our list of intents found in `dict.intents.csv`, the model checks whether each individual intent is suitable for the given query.
-
-For this tutorial, we will be using the ATIS (Airline Travel Information System) dataset, converting it to a multi-label data format, and then using the new data to train our model.
-
-## Download the dataset and convert it to the NeMo format
 """
-
-# download the converter files from github for the purpose of this tutorial
-DATA_DIR = './multiatis'
-NEMO_DIR = './atis'
-
-os.system("mkdir ./multiatis")
-os.system("mkdir ./atis")
-
-
-files = [f'https://raw.githubusercontent.com/howl-anderson/ATIS_dataset/master/data/raw_data/ms-cntk-atis/atis.dict.intent.csv',
-         f'https://raw.githubusercontent.com/howl-anderson/ATIS_dataset/master/data/raw_data/ms-cntk-atis/atis.dict.slots.csv',
-         f'https://raw.githubusercontent.com/howl-anderson/ATIS_dataset/master/data/raw_data/ms-cntk-atis/atis.dict.vocab.csv',
-         f'https://raw.githubusercontent.com/howl-anderson/ATIS_dataset/master/data/raw_data/ms-cntk-atis/atis.test.intent.csv',
-         f'https://raw.githubusercontent.com/howl-anderson/ATIS_dataset/master/data/raw_data/ms-cntk-atis/atis.test.pkl',
-         f'https://raw.githubusercontent.com/howl-anderson/ATIS_dataset/master/data/raw_data/ms-cntk-atis/atis.test.query.csv',
-         f'https://raw.githubusercontent.com/howl-anderson/ATIS_dataset/master/data/raw_data/ms-cntk-atis/atis.test.slots.csv',
-         f'https://raw.githubusercontent.com/howl-anderson/ATIS_dataset/master/data/raw_data/ms-cntk-atis/atis.train.intent.csv',
-         f'https://raw.githubusercontent.com/howl-anderson/ATIS_dataset/master/data/raw_data/ms-cntk-atis/atis.train.pkl',
-         f'https://raw.githubusercontent.com/howl-anderson/ATIS_dataset/master/data/raw_data/ms-cntk-atis/atis.train.query.csv',
-         f'https://raw.githubusercontent.com/howl-anderson/ATIS_dataset/master/data/raw_data/ms-cntk-atis/atis.train.slots.csv']
-
-
-for file in files:
-    wget.download(file, DATA_DIR)
-
-
-# download the converter files from github for the purpose of this tutorial
-wget.download(f'https://raw.githubusercontent.com/NVIDIA/NeMo/r2.0.0rc0/scripts/dataset_processing/nlp/intent_and_slot/import_datasets.py', NEMO_DIR)
-wget.download(f'https://raw.githubusercontent.com/NVIDIA/NeMo/r2.0.0rc0/scripts/dataset_processing/nlp/intent_and_slot/assistant_utils.py', NEMO_DIR)
-wget.download(f'https://raw.githubusercontent.com/NVIDIA/NeMo/r2.0.0rc0/scripts/dataset_processing/nlp/intent_and_slot/convert_datasets.py', NEMO_DIR)
-
-# Get original atis dataset
-os.system("python ./import_datasets.py --dataset_name=atis --source_data_dir=. --target_data_dir=./nemo_format")
-# Script will create new files at ./new_format
-os.system("mkdir ./new_format")
-os.system("python ./convert_datasets.py --source_data_dir=./nemo_format --target_data_dir=./new_format")
-
-"""## Data Augmentation (Optional)
----
-
-In scenarios when we don't have many training examples with multiple intent labels, data augmentation can be very useful. This can be done by concatenating utterances together, and adding it to our training data. Some ways of concatenating include adding a period or \"and\" between the two utterances. A script has been provided below to help with augmentation, but it can be changed depending on your use case.
-"""
-
-# download the data augmentation script
-wget.download(f'https://raw.githubusercontent.com/NVIDIA/NeMo/r2.0.0rc0/scripts/dataset_processing/nlp/intent_and_slot/augment_training_data.py', NEMO_DIR)
-
-"""The script augment_training_data.py allows for four command line arguments to be passed in:
-
-source_data_dir: directory that contains the original multi-label data <br>
-target_data_dir: directory to store the new data directory <br>
-num_mixed: number of new utterances to add to dataset per class pair (utterances with labels 1 and 2) <br>
-link_string: string that is in between the two utterances (".", "", "and", "with") <br>
-"""
-
-os.system("python ./augment_training_data.py --source_data_dir=./new_format --target_data_dir=./augmented_data --num_mixed=10")
-
-"""## Training the Model"""
-
-# download the model config file from repository for the purpose of this example
-wget.download(f'https://raw.githubusercontent.com/NVIDIA/NeMo/r2.0.0rc0/examples/nlp/intent_slot_classification/conf/multi_label_intent_slot_classification_config.yaml', NEMO_DIR)
-
-# print content of the config file
-config_file = f"./multi_label_intent_slot_classification_config.yaml"
-print(config_file)
-config = OmegaConf.load(config_file)
-print(OmegaConf.to_yaml(config))
-
-config.model.data_dir = f"./new_format"
-config.model.validation_ds.prefix = "dev"
-config.model.test_ds.prefix = "dev"
-config.model.class_balancing = "weighted_loss"
-config.trainer.max_epochs = 5
-run_name = "test"
-
-# checks if we have GPU available and uses it
-accelerator = 'gpu' if torch.cuda.is_available() else 'cpu'
-config.trainer.devices = 1
-config.trainer.accelerator = accelerator
-
-# remove distributed training flags
-config.trainer.strategy = 'auto'
-
-trainer = pl.Trainer(**config.trainer)
-config.exp_manager.exp_dir = os.path.join(DATA_DIR, "output/" + run_name)
-config.exp_manager.create_checkpoint_callback = True
-
-exp_dir = exp_manager(trainer, config.get("exp_manager", None))
-model = nemo_nlp.models.MultiLabelIntentSlotClassificationModel(config.model, trainer=trainer)
-trainer.fit(model)
-
-"""## Evaluation
-
-To see how the model performs, we can evaluate the performance of the trained model on a test data file. Here we will reload the model from the `.nemo` file saved during training. By default, the `.nemo` file contains the final checkpoint. We will use the same trainer for testing.
-"""
-
-# specify checkpoint path with .nemo file
-checkpoint_path = os.path.join(exp_dir, "checkpoints", "MultiLabelIntentSlot.nemo")
-
-# load the model from this checkpoint
-eval_model =  nemo_nlp.models.MultiLabelIntentSlotClassificationModel.restore_from(checkpoint_path)
-
-"""### Optimizing Threshold
-
-As mentioned above, when classifying a given query such as `show all flights and fares from denver to san francisco`, our model checks whether each individual intent would be suitable. Before assigning the final labels for a query, the model assigns a probability an intent matches the query. For example, if our `dict.intents.csv` had 5 different intents, then the model could output for a given query \[0.52, 0.38, 0.21, 0.67. 0.80\] where each value represents the probability that query matches that particular intent.
-
-We need to use these probabilities to generate final label predictions of 0 or 1 for each label. While we can use 0.5 as the probability threshold, it is usually the case that there is a better threshold to use depending on the metric we want to optimize. For this tutorial, we will be finding the threshold that gives us the best micro-F1 score on the validation set. After running the `optimize_threshold` method, the threshold attribute for our model will be updated.
-"""
-
-eval_model.optimize_threshold(config.model.test_ds, 'dev')
-
-eval_model.threshold
-
-"""###  Inference from Examples
-Similar to the previous example we can run inference to see how the trained model will classify Intents and Slots for given queries from this domain. To improve the predictions you may need to train the model for more than 10 epochs.
-
-"""
-
-queries = [
-    'i would like to find a flight from charlotte to las vegas that makes a stop in st. louis',
-    'on april first i need a ticket from tacoma to san jose departing before 7 am',
-    'how much is the limousine service in boston',
-]
-
-# We use the optimized threshold for predictions
-pred_intents, pred_slots, pred_list = eval_model.predict_from_examples(queries, config.model.test_ds)
-logging.info('The prediction results of some sample queries with the trained model:')
-
-for query, intent, slots in zip(queries, pred_intents, pred_slots):
-    logging.info(f'Query : {query}')
-    logging.info(f'Predicted Intents: {intent}')
-    logging.info(f'Predicted Slots: {slots}')

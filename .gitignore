@@ -3,10 +3,6 @@ __pycache__
 nemo_experiments
 nemo_format
 NLU-Evaluation-Data-master
-atis
-multiatis
-assistant_utils.py
-import_datasets.py
-intent_slot_classification_config.yaml
+NLU-Evaluation-Data-master*.zip
 .python-version
-NLU-Evaluation-Data-master.zip
+
