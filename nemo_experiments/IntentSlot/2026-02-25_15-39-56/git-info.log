@@ -1,0 +1,46 @@
+commit hash: 195f8831bc505cac49b58d29c8ab57ff85ec545e
+diff --git a/intent_slot_classification_config.yaml b/intent_slot_classification_config.yaml
+index df66111..3020dfa 100644
+--- a/intent_slot_classification_config.yaml
++++ b/intent_slot_classification_config.yaml
+@@ -36,23 +36,23 @@ model:
+     drop_last: false
+     pin_memory: false
+ 
+-  validation_ds:
+-    prefix: test
+-    batch_size: 32
+-    shuffle: false
+-    num_samples: -1
+-    num_workers: 2
+-    drop_last: false
+-    pin_memory: false
+-
+-  test_ds:
+-    prefix: test
+-    batch_size: 32
+-    shuffle: false
+-    num_samples: -1
+-    num_workers: 2
+-    drop_last: false
+-    pin_memory: false
++  #validation_ds:
++  #  prefix: test
++  #  batch_size: 32
++  #  shuffle: false
++  #  num_samples: -1
++  #  num_workers: 2
++  #  drop_last: false
++  #  pin_memory: false
++#
++#  test_ds:
++#    prefix: test
++#    batch_size: 32
++#    shuffle: false
++#    num_samples: -1
++#    num_workers: 2
++#    drop_last: false
++#    pin_memory: false
+ 
+   tokenizer:
+     tokenizer_name: ${model.language_model.pretrained_model_name} # or sentencepiece

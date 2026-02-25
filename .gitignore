@@ -1,8 +1,4 @@
 .venv
 __pycache__
-nemo_experiments
-nemo_format
-NLU-Evaluation-Data-master
-NLU-Evaluation-Data-master*.zip
 .python-version
 
