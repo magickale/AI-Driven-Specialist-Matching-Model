@@ -1,0 +1,14 @@
+commit hash: a1ced6e854710ce95bbed01dde4fdb8ccceeba97
+diff --git a/nemo_format/train_slots.tsv b/nemo_format/train_slots.tsv
+index a1d2dac..0c3f514 100644
+--- a/nemo_format/train_slots.tsv
++++ b/nemo_format/train_slots.tsv
+@@ -130,7 +130,7 @@
+ 6 6 3 6 4 4 4
+ 6 6 6 6 5 6 6 3
+ 6 6 6 6 6 6 4 4 6 3 3 6 6 6 6
+-6 6 6 6 1 6 6 6 6 4 4
++6 6 6 6 1 6 6 6 6 6 4 4
+ 6 6 6 6 6 6 6 5
+ 6 6 6 6 6 3 6 6 6 5 5
+ 6 6 6 4 6 6 6 6 6 6
