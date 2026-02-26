@@ -17,7 +17,7 @@ source .venv/bin/activate
 
 ## 3. Install Project Dependencies
 ```shell
-python3 -m pip install --upgrade pip setuptools wheel packaging
+python3 -m pip install --upgrade pip setuptools<81 wheel packaging
 python3 -m pip install torch==2.1.2 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 python3 -m pip install cython
 python3 -m pip install psutil
