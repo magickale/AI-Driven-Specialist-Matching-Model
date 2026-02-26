@@ -1,0 +1,307 @@
+sentence	label
+i need a surgeon who can do an appendectomy	0
+who can i see about my diabetes	1
+need a male doctor who can perform a hernia repair	0
+can i get a cholecystectomy done	0
+who is the best at performing a liver resection	0
+i need a surgeon in auburndale that can perform  gallbladder removal	0
+find me a surgeon who specializes with hernia repair	0
+where can i get my tonsilitis looked at	1
+i have appendicitis who should i see	1
+who should i see for an appendectomy	0
+who should i see for a cesarian section	0
+who should i see for an hernia repair	0
+who should i see for a mastectomy	0
+who should i see for a tonsillectomy	0
+who should i see for an cholecystectomy	0
+im looking for a male doctor for a hernia repair	0
+im looking for a female doctor for a mastectomy	0
+im looking for a female doctor for a cesarian section	0
+im looking for a male doctor for a cesarian section	0
+im looking for a male doctor for a tonsillectomy	0
+looking for a doctor in auburndale that can help with appendicitis	1
+looking for a doctor in westminster that can help with appendicitis	1
+looking for a doctor in winter haven that can help with appendicitis	1
+looking for a doctor in lake gibson that can help with appendicitis	1
+looking for a doctor in lake miriam that can help with appendicitis	1
+looking for a doctor in plant city that can help with appendicitis	1
+looking for a doctor at pablo campus that can help with appendicitis	1
+looking for a doctor at grasslands campus that can help with appendicitis	1
+i have diabetes who can help	1
+i have diverticulosis who can help	1
+i have pancreatitis who can help	1
+i have hyperparathyroidism who can help	1
+im worried i have breast cancer who should i see	1
+im worried i have kidney stones who should i see	1
+im worried i have colon cancer who should i see	1
+which doctor is the best choice for a mastectomy	0
+which doctor is the best choice for a cesarian section	0
+which doctor is the best choice for a tonsilectomy	0
+which doctor is the best choice for a pancreatectomy	0
+which doctor is the best choice for a cholecystectomy	0
+mastectomy near auburndale	0
+tonsilectiomy near auburndale	0
+pancreatectomy near auburndale	0
+colonoscopy near auburndale	0
+mastectomy near winter haven	0
+tonsilectiomy near winter haven	0
+pancreatectomy near winter haven	0
+colonoscopy near winter haven	0
+looking for a male doctor in auburndale who specializes in hernia repair	0
+looking for a male doctor in parkview who specializes in hernia repair	0
+looking for a female doctor in auburndale who specializes in cesarian section	0
+looking for a male doctor in morrell who specializes in hernia repair	0
+looking for a female doctor in auburndale who specializes in gallstone removal	0
+looking for a male doctor in lake gibson who specializes in cholecystectomy	0
+looking for a male doctor in winter haven who specializes in tonsilectomy	0
+looking for a female doctor in lake miriam who specializes in mastectomy	0
+looking for a male doctor at pablo campus who specializes in pancreatectomy	0
+looking for a female doctor at north campus who specializes in appendectomy	0
+i have been diagnosed with appendicitis who should i see	1
+i have been diagnosed with pancreatitis who should i see	1
+i have been diagnosed with tonsilitis who should i see	1
+i have been diagnosed with diabetes who should i see	1
+i have been diagnosed with hepatitis who should i see	1
+is there a male doctor in winter haven who can help with tonsilitis	1
+is there a male doctor in lake gibson who can help with pancreatitis	1
+is there a male doctor in lake miriam who can help with diabetes	1
+is there a male doctor at pablo campus who can help with hepatitis	1
+is there a male doctor at north campus who can help with appendictis	1
+female doctor who can help with tonsilitis 	1
+male doctor who can help with pancreatitis 	1
+female doctor who can help with diabetes 	1
+male doctor who can help with hepatitis	1
+female doctor who can help with appendictis	1
+male doctor in auburndale who specializes in hernia repair	0
+female doctor in morrell who specializes in  gallstone removal	0
+male doctor in parkview who specializes in cesarian section	0
+female doctor in winter haven who specializes in appendectomy	0
+male doctor in lake gibson who specializes in appendectomy	0
+female doctor at north campus who specializes in tonsilectomy	0
+female doctor at pablo campus who specializes in mastectomy	0
+male doctor at north campus who specializes in mastectomy	0
+who should i see in winter haven for a appendectomy	0
+who should i see in winter haven for a mastectomy	0
+who should i see in winter haven for a hernia repair	0
+who should i see in winter haven for a cesarian section	0
+who should i see in auburndale for a mastectomy	0
+who should i see in auburndale for a appendectomy	0
+who should i see in auburndale for a cholecystectomy	0
+who should i see in auburndale for pancreatectomy	0
+who should i see in winter haven for diabetes	1
+who should i see in lake gibson for hepatitis	1
+who should i see in winter haven for tonsilitis	1
+who should i see at north campus for appendictis	1
+who should i see in winter haven for kidney stones	1
+who should i see in parkview for hepatitis	1
+who should i see in parkview for pancreatitis	1
+who should i see in auburndale for hemorrhoids	1
+who should i see in auburndale for tonsilitis	1
+who should i see in auburndale for kidney stones	1
+i need a doctor that can cure my hepatitis	1
+i need a male surgeon who can perform open heart surgery	0
+i have been diagnosed with brain cancer who should i see in lakeland	1
+who should i see in tampa for my meningitis	1
+find me a female doctor in auburndale for pancreatitis	1
+show me surgeons in winter haven for appendectomy	0
+i want a woman doctor to preform my mastectomy	0
+i have been diagnosed with hepatitis is there a doctor in winter haven that can help me	1
+please search for a male surgeon in orlando who can perform a c section	0
+tampa spanish speaking surgeon for a liver transplant	0
+north lakeland coronary artery bypass surgeon	0
+south lakeland bypass surgery	0
+east lakeland female doctor for cholecystectomy	0
+polk city free skin graft	0
+west lakeland kidney transplant	0
+i need a mastectomy to treat my breast cancer	0
+urgently need an appenddicitis operation in lakeland	1
+hernia repair in winter haven	0
+breast cancer doctor	1
+hepatitis specialist in lakeland	1
+looking for a surgeon to preform my colectomy	0
+i need an english speaking male doctor for hernia repair	0
+i want a female doctor who specializes in colorectal procedures	1
+diabetes specialist in winter haven	1
+i am looking for an appendectomy in winter haven	1
+i would like a male doctor to perform my colonoscopy	0
+i am lookin for a diabetes specialist in lakeland	1
+looking for a robotic surgery specialist for hernia repair	0
+looking for a doctor who can operate with robotics for appendectomy	0
+i want a surgeon in winter haven for robotic heart surgery	0
+surgeon in lakeland for robotic hernia repair	0
+who is the best diabetes specialist in lakeland	1
+if i needed to get a hernia repair in winter haven who should i see	0
+i would like a female doctor who can perform a robotic mastectomy	1
+i need a doctor to help with diabetes	1
+i need a doctor in lakeland to help with liver disease	1
+i need an appendectomy which doctor would be the best	0
+which is the best doctor for appendectomies in west lakeland	0
+which doctor has the best survival rate for heart surgery	0
+winter haven open heart surgery surgeon with the best survival rate	0
+best heart disease doctor in winter haven	1
+who is lakelands best cardiologist	1
+i would like to find a female obgyn doctor in lakeland	1
+i am looking for the best endochronologist in winter haven	1
+who is the best neurologist in lakeland	1
+i am struggling with my diabetes who can help	1
+who is the best surgeon in winter haven for brain surgery	0
+i need a brain surgery who is the best in lakeland	0
+looking for a doctor to treat my hepatitis in auburndale	1
+looking for an oncologist in winter haven	1
+is there an oncologist who specializes in skin cancer	1
+is there a doctor in plant city who can treat my diabetes	1
+which surgeon in lakeland should i see for my appendectomy	0
+ive been diagnosed with diabetes who should i see	1
+i have appendicitis who should i see	1
+colorectal specialist in lakeland	1
+i need a hernia repair in winter haven	0
+i am looking for a robotic mastectomy in tampa	0
+i am in need of a doctor who specializes in hernia repair	0
+winter haven hernia repair surgeon	0
+best cardiologist in lakeland	1
+who is the best endocronologist in tampa	1
+looking for a spanish speaking cancer specialist in tampa	1
+endocronologist in winter haven who speaks english	1
+who is the best female cardiologist in orlando	1
+i would like a female doctor in winter haven area who specializes in c sections	1
+find me a male doctor in lakeland who specializes in gallbladder surgery	1
+im looking for a female doctor in lakeland to preform colonoscopy	0
+looking for surgeon in the lakeland area to preform chest biopsy	0
+male doctors in lakeland who specialize in cardiology	1
+show me the best female hernia repair specialist in tampa	0
+please refer me to a doctor in winter haven to preform colonoscopy	0
+best person to preform heart surgery in pasco	0
+best surgeon to do my c section	0
+who should i see for diabetes	1
+endocrinologist in lakeland	1
+which endocrinologist should i see	1
+please show me cardiologists in tampa	1
+im looking for brain surgeons in winter haven	1
+could you show me the best hernia repair doctor in orlando	0
+female doctors in auburndale who can preform mastectomy	0
+i would like you to find me a male doctor to preform my appendectomy	0
+which doctor can preform mastectomies the best	0
+ive been diagnosed with diabetes show me endocrinologists	1
+please tell me who the best cardiologist in lakeland is	1
+please show me high rated neurologists in winter haven	1
+best rated oncologist in tampa	1
+refer me a doctor in pasco who can preform a hernia repair	0
+find me a doctor to preform appendectomy	0
+please find me a male doctor who preforms c sections	0
+who are some cardiologists in lakeland	1
+looking for female optomotrist  in tampa	1
+please refer me to a hernia repair surgeon in winter haven	0
+im looking for a endocrinologist in lakeland	1
+please find me someone who can preform a mastectomy	0
+i need to get a vasectomy who should i see	0
+please find me a doctor to preform my open heart surgery	0
+please find me a doctor in tampa to preform my appendectomy	0
+show me doctors who specialize in hernia repair	0
+please find me the best neurologist in orlando	1
+who would you reccomend me to go see for diabetes	1
+find a surgeon who can perform appendectomy	0
+i need a surgeon for hernia repair	0
+who should i see for gallbladder removal	0
+find a female doctor for mastectomy	0
+i want a male doctor for hernia repair	0
+i need a surgeon for cesarian section	0
+find a surgeon at lakeland regional medical center for appendectomy	0
+i need a spanish speaking surgeon for gallbladder removal	0
+find a surgeon at lakeside village for tonsillectomy	0
+i have appendicitis who should i see	1
+who can i see for gallstones	1
+i have a hernia who should i see	1
+i was diagnosed with breast cancer who should i see	1
+who should i see for tonsillitis	1
+i have diverticulitis who should i see	1
+i have colon cancer who should i see	1
+i have pancreatitis who should i see	1
+who should i see for liver disease	1
+i have abdominal pain who should i see	1
+who would you recommend me to go see for diabetes	1
+i was told i need an appendectomy can you help me	0
+can you refer me to a surgeon for hernia repair	0
+please find a female surgeon at north campus for hernia repair	0
+i need a spanish speaking surgeon for cholecystectomy at lakeland regional medical center	0
+can you connect me with a surgeon who performs gallbladder removal	0
+i want a male doctor who can perform tonsillectomy at lakeside village	0
+do you have a surgeon for colectomy	0
+i need someone who can perform hemorrhoidectomy	0
+please show surgeons who perform bowel resection	0
+i was scheduled for a mastectomy and need a surgeon	0
+im struggling with diabetes who should i see	1
+i was diagnosed with hepatitis is there a doctor who can help	1
+who can help me with pancreatitis at lakeland regional medical center	1
+i have tonsillitis and i prefer a female doctor	1
+can you find someone who speaks spanish to help with diabetes	1
+find a female general surgeon who performs hernia repair at grasslands campus	0
+i have gallstones and i want a spanish speaking doctor	1
+i need a female surgeon who speaks spanish for mastectomy	0
+can you refer me to a surgeon for liver resection	0
+please find a general surgeon for appendectomy	0
+i have diabetes and prefer a male doctor	1
+can you refer me to a surgeon for hernia repair	0
+i have diabetes who should i see	1
+i want a female doctor for mastectomy	0
+i have hepatitis and need a spanish speaking doctor	1
+find a colorectal surgeon for colectomy	0
+i need a surgeon for gallbladder removal	0
+find a surgeon who performs mastectomy	0
+they told me i need to get an appendectomy	0
+i have been told i need an appendectomy who should i see	0
+find me a surgeon who specializes in cholecystectomy	0
+i was diagnosed and now require colectomy laparoscopic	0
+is there a doctor who performs hernia repair inguinal	0
+i need someone experienced with breast mastectomy	0
+i have been scheduled for liver resection and need a surgeon	0
+can you help me find a specialist for pancreatectomy robot	1
+i was advised to undergo nissenfundoplication laparoscopic who performs that	0
+i need a surgeon who handles splenectomy laparoscopic	0
+who can perform gastrectomy robot	0
+i have been told i require parathyroidectomy	0
+is there a surgeon who does thyroidectomy regularly	0
+i was diagnosed and need whipple procedure	0
+find me a doctor who performs bowel resection small laparascopic	0
+i need help locating a surgeon for hemorrhoidectomy	0
+who specializes in rectum resection transanal	1
+i have been recommended ileostomy robot who should i contact	0
+can you connect me with someone who performs adrenalectomy robot	0
+i was advised to have esophagectomy laparoscopic	0
+i need a surgeon experienced in panniculectomy	0
+i require port a cath insert who handles that	0
+who is qualified to perform tumor debulking	0
+i need a specialist for skin graft split thickness	1
+i was told i need lysis adhesions laparoscopic	0
+can you find a surgeon for tracheostomy	0
+i have been recommended colectomy sigmoid	0
+who performs breast lumpectomy	0
+i need gland excision submandibular and want the right surgeon	0
+i was advised to undergo neck dissect	0
+is there someone who handles rectum repair prolapse	0
+i have been told my child needs appendectomy laparoscopic pediatric near lakeland regional health medical center	0
+is there a surgeon around lakeland regional health winter haven who performs hernia repair umbilical robot	0
+i was scheduled for colectomy laparoscopic near lakeland regional health pablo campus who should i see	0
+can you help me find a whipple procedure robot surgeon around lakeland regional health north campus hollis cancer center	0
+i need breast reconstruction near central florida orthopaedic surgery associates pl who handles that	0
+i was advised to have gastrostomy insert feeding tube	0
+who performs retroperitoneal excision mass	0
+i need splenectomy robot and would like the best option	0
+can you refer me to someone who does pancreatectomy partial robot	0
+i was told i need abdominal component separation robotic	0
+who handles diagnostic laparoscopic procedures	0
+i require wound debride abdomen is there a surgeon available	0
+i need colonoscopy mnor and would like a specialist	1
+can you help me find someone for gastrojejunostomy laparoscopic	0
+i was recommended liver ablation tumor w radiofrequency	0
+who performs thyroid lobectomy	0
+i need proctectomy and want an experienced surgeon	0
+can you find someone who does nissenfundoplication robot	0
+i was told i need stoma revision colostomy	0
+who specializes in abdominal perineal resection	1
+i was diagnosed and told i need an appendectomy laparoscopic who should i see	0
+can you help me find a surgeon who performs cholecystectomy	0
+i have been scheduled for colectomy and need help choosing a surgeon	0
+is there a doctor who specializes in hernia repair inguinal	0
+i need someone experienced with breast mastectomy	0
+my doctor recommended liver resection and i need a surgeon	0
+i was told pancreatectomy robot is required who handles that	0

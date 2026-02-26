@@ -1,0 +1,6 @@
+[NeMo W 2026-02-25 15:44:33 nemo_logging:349] /home/val/HDD1/Repos/AI-Driven-Specialist-Matching-Model/.venv/lib/python3.10/site-packages/lightning_fabric/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+      __import__("pkg_resources").declare_namespace(__name__)
+    
+[NeMo W 2026-02-25 15:44:36 nemo_logging:349] /home/val/HDD1/Repos/AI-Driven-Specialist-Matching-Model/.venv/lib/python3.10/site-packages/lightning_fabric/connector.py:554: UserWarning: 16 is supported for historical reasons but its usage is discouraged. Please set your precision to 16-mixed instead!
+      rank_zero_warn(
+    
