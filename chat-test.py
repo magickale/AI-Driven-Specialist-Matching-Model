@@ -14,7 +14,6 @@ while(True):
         sys.exit()
 
     pred_intents, pred_slots = model.predict_from_examples(buf, model.cfg.test_ds)
-
     for intent, slots in zip(pred_intents, pred_slots):
         print(f'Predicted Intent: {intent}')
         print(f'Predicted Slots: {slots}')
