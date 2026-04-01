@@ -55,23 +55,6 @@ config.model.data_dir = f'./nemo_format'
 NeMo models are primarily PyTorch Lightning modules - and therefore are entirely compatible with the PyTorch Lightning ecosystem. `config.trainer.max_epochs` - param defines number of training epochs. Usually 50-100 epochs or less should be enough to train on your data. Let's instantiate the Trainer object.
 """
 
-# lets modify some trainer configs
-# checks if we have GPU available and uses it
-accelerator = 'gpu' if torch.cuda.is_available() else 'cpu'
-config.trainer.devices = 1
-config.trainer.accelerator = accelerator
-
-config.trainer.precision = 16 if torch.cuda.is_available() else 32
-
-# for mixed precision training, uncomment the line below (precision should be set to 16 and amp_level to O1):
-# config.trainer.amp_level = O1
-
-# remove distributed training flags
-config.trainer.strategy = 'auto'
-
-# setup a small number of epochs for demonstration purposes of this tutorial
-config.trainer.max_epochs = 5
-
 trainer = pl.Trainer(**config.trainer)
 
 """## Setting up a NeMo Experiment
